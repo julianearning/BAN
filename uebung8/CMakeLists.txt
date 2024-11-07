@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( gradienten_feld )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( gradienten_feld gradienten_feld.cpp )
+target_link_libraries( gradienten_feld ${OpenCV_LIBS} )

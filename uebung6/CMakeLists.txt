@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( paper_thresholding )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( paper_thresholding paper_thresholding.cpp )
+target_link_libraries( paper_thresholding ${OpenCV_LIBS} )
